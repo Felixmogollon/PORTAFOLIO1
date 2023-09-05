@@ -7,9 +7,12 @@ const Contact = () => {
   const form = useRef();
 
   return (
-    <section className="bg-dark_primary text-white" id="contact">
+    <section
+      className="bg-dark_primary text-white flex justify-center items-center "
+      id="contact"
+    >
       <Toaster />
-      <div className="md:container px-5 py-14">
+      <div className="md:container px-5 py-14 ">
         <h2 className="title !text-white" data-aos="fade-down">
           {Contact.title}
         </h2>
@@ -24,7 +27,7 @@ const Contact = () => {
           <form
             action="https://formsubmit.co/1d4fd4fdd0a1bb674cef1d679c3cb713"
             method="POST"
-            className="flex-1 flex flex-col gap-5"
+            className="flex-1 flex flex-col gap-5  max-w-[800px]"
           >
             <input
               type="text"
@@ -61,8 +64,8 @@ const Contact = () => {
             />
             <input type="hidden" name="_captcha" value="false" />
           </form>
-          <div className="flex-1 flex flex-col gap-5 ">
-            <div className="flex md:grid md:gap-8 items-center gap-8">
+          <div className=" flex flex-col gap-5 ">
+            <div className="flex md:grid md:justify-center md:gap-8 items-center gap-8">
               <a
                 href="https://www.facebook.com/Cristian.Agudelo09?mibextid=ZbWKwL"
                 target="_blank"
