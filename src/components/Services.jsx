@@ -8,7 +8,10 @@ const Services = () => {
         <h2 className="title" data-aos="fade-down">
           {services.title}
         </h2>
-        <h4 className="subtitle" data-aos="fade-down">
+        <h4
+          className="subtitle text-[20px] md:text-[35px]"
+          data-aos="fade-down"
+        >
           {services.subtitle}
         </h4>
         <br />
@@ -18,7 +21,7 @@ const Services = () => {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 600}
-              className="min-w-[14rem] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1 group-hover:blur-sm 
+              className="min-w-[14rem] duration-300  border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1 group-hover:blur-sm 
               hover:!blur-none"
             >
               <img src={content.logo} alt="..." className="mx-auto" />

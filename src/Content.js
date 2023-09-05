@@ -54,7 +54,7 @@ export const content = {
     title: "Desarrollador web",
     firstName: "CRISTIAN",
     LastName: "AGUDELO",
-    btnText: "Contratame",
+    btnText: "Contactame",
     image: Hero_person,
     hero_content: [
       {
@@ -62,8 +62,8 @@ export const content = {
         text: "Años de experiencia en desarrollo web.",
       },
       {
-        count: "10+",
-        text: "Proyectos trabajados en mi carrera",
+        count: "7+",
+        text: "Proyectos trabajados en mi proceso de educación",
       },
     ],
   },
@@ -73,23 +73,23 @@ export const content = {
     skills_content: [
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
+
         logo: reactjs,
       },
 
       {
         name: "JavaScript",
-        para: "Lorem ipsum text  dummy",
+
         logo: js,
       },
       {
         name: "Node js",
-        para: "Lorem ipsum text  dummy",
+
         logo: nodejs,
       },
       {
         name: "GitHub",
-        para: "Lorem ipsum text  dummy",
+
         logo: git,
       },
     ],
@@ -101,7 +101,7 @@ export const content = {
     service_content: [
       {
         title: "Desarrollo web",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Desarrollador web con la experiencia y las habilidades necesarias para llevar tus ideas y proyectos en línea al siguiente nivel. Mi enfoque se centra en ofrecer soluciones web a medida que combinen diseño atractivo, funcionalidad intuitiva y un rendimiento excepciona",
         logo: services_logo1,
       },
     ],
@@ -114,30 +114,37 @@ export const content = {
       {
         title: "Ecommerce",
         image: project1,
+        link: "https://store-ecommerce-cristian.netlify.app",
       },
       {
         title: "App del clima",
         image: project2,
+        link: "https://app-weather-cristian.netlify.app",
       },
       {
         title: "Buscador de paises",
         image: project3,
+        link: "https://app-countries-cristian.netlify.app",
       },
       {
         title: "App de Rick and Morty",
         image: project4,
+        link: "https://rick-and-morty-app-cristian.netlify.app",
       },
       {
         title: "Crud de usuarios",
         image: project5,
+        link: "https://users-cristian.netlify.app",
       },
       {
         title: "App galletas de la fortuna",
         image: project6,
+        link: "https://fortune-cookies-cristian.netlify.app",
       },
       {
         title: "App de Pokemons",
         image: project7,
+        link: "https://api-pokemons-cristian.netlify.app",
       },
     ],
   },
@@ -146,31 +153,11 @@ export const content = {
     subtitle: "PARA TUS PROYECTOS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+    para: "¡Hola! Soy Cristian, un apasionado desarrollador frontend con experiencia en la creación de experiencias web excepcionales. Mi enfoque se centra en utilizar tecnologías de vanguardia para diseñar y desarrollar aplicaciones web que no solo sean visualmente atractivas, sino también altamente funcionales y eficientes.",
     btnText: "Hire Me",
   },
   Contact: {
     title: "Contáctame",
     subtitle: "PONERSE EN CONTACTO",
-    // social_media: [
-    //   {
-    //     text: "cristian.agudelo1@udea.edu.co",
-    //     icon: GrMail,
-    //     link: "mailto:cristian.agudelo1@udea.edu.co",
-    //   },
-    //   {
-    //     text: "+57 301 561 5963",
-    //     icon: MdCall,
-    //     link: "https://wa.me/573015615963",
-    //   },
-    //   {
-    //     text: "codeaprogram",
-    //     icon: BsInstagram,
-    //     link: "https://www.instagram.com/codeaprogram/",
-    //   },
-    // ],
-  },
-  Footer: {
-    text: "All © Copy Right Reserved 2022",
   },
 };

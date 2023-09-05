@@ -17,12 +17,15 @@ const Projects = () => {
           <h2 className="title" data-aos="fade-down">
             {Projects.title}
           </h2>
-          <h4 className="subtitle" data-aos="fade-down">
+          <h4
+            className="subtitle text-[20px]  md:text-[35px]"
+            data-aos="fade-down"
+          >
             {Projects.subtitle}
           </h4>
           <br />
         </div>
-        <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
+        <div className="flex items-center  lg:flex-row flex-col-reverse gap-5">
           <img
             src={Projects.image}
             alt="..."
@@ -36,19 +39,30 @@ const Projects = () => {
             data-aos="fade-left"
             spaceBetween={20}
             modules={[Pagination]}
-            className="rounded-3xl pb-16 max-w-xs drop-shadow-primary self-start"
+            className="rounded-3xl pb-16 md:max-w-[420px] max-w-[280px] drop-shadow-primary self-center"
           >
             {Projects.project_content.map((content, i) => (
               <SwiperSlide
                 key={i}
-                className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
+                className="bg-white rounded-3xl  border-[#FAF9FD] h-fit"
               >
-                <img src={content.image} alt="..." />
-                <div className="flex flex-col gap-1 mt-2">
-                  <h5 className="font-bold font-Poppins">{content.title}</h5>
-                  <button className="font-bold text-gray self-end">
-                    READ MORE
-                  </button>
+                <img
+                  className="h-full w-full object-cover"
+                  src={content.image}
+                  alt="..."
+                />
+                <div className="flex flex-col gap-2 mt-2">
+                  <h5 className="font-bold font-Poppins p-2">
+                    {content.title}
+                  </h5>
+                  <a
+                    href={content.link}
+                    className="font-bold text-black/70 self-center pb-2 text-center flex justify-center items-center gap-1"
+                    target="_blank"
+                  >
+                    <i className="bx bx-link-external"></i>
+                    Visitame
+                  </a>
                 </div>
               </SwiperSlide>
             ))}

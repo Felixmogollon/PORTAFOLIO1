@@ -13,7 +13,10 @@ const Contact = () => {
         <h2 className="title !text-white" data-aos="fade-down">
           {Contact.title}
         </h2>
-        <h4 className="subtitle" data-aos="fade-down">
+        <h4
+          className="subtitle text-[20px] md:text-[35px]"
+          data-aos="fade-down"
+        >
           {Contact.subtitle}
         </h4>
         <br />
@@ -51,7 +54,11 @@ const Contact = () => {
               className="btn self-start
             bg-white text-dark_primary cursor-pointer"
             />
-            <input type="hidden" name="_next" value="http://localhost:5173/" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://portafolio-cristian-agudelo.netlify.app"
+            />
             <input type="hidden" name="_captcha" value="false" />
           </form>
           <div className="flex-1 flex flex-col gap-5 ">

@@ -9,21 +9,30 @@ import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 
 // Animation package
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1800,
+      offset: 100,
+      disable: "mobile",
+    });
+  }, []);
   return (
-    <div className="">
+    <div>
       <Navbar />
       <Hero />
       <Skills />
       <Service />
       <Projects />
-      {/* <Testimonials /> */}
       <Hireme />
       <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">CRISTIAN AGUDELO</h6>
-        <p>CopyRights © 2023 | All Rights Reserved</p>
+        <p>CopyRights © 2023 | All Rights Reserved </p>
       </footer>
     </div>
   );

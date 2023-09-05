@@ -7,6 +7,7 @@ export default {
       Paprika: "Paprika",
       Inria: "Inria Serif",
     },
+
     container: {
       center: true,
       padding: "4rem",
@@ -18,10 +19,15 @@ export default {
         gray: "#B7C5D3",
       },
       backgroundImage: {
-        primaryLinear: "linear-gradient(180deg, #B6CCF5 0.48%, #D5E3F1 100%)",
+        primaryLinear:
+          "linear-gradient(180deg, rgba(186, 206, 252, 0.8) 0%, rgba(213, 227, 241, 0.8) 100%)",
       },
       dropShadow: {
         primary: "-5px 35px 40px rgba(223, 229, 236, 0.9)",
+      },
+      screens: {
+        xxs: "350px",
+        xs: "450px",
       },
     },
   },

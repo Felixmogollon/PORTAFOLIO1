@@ -9,7 +9,10 @@ const Hireme = () => {
         <h2 className="title" data-aos="fade-down">
           {Hireme.title}
         </h2>
-        <h4 className="subtitle" data-aos="fade-down">
+        <h4
+          className="subtitle text-[20px]  md:text-[35px]"
+          data-aos="fade-down"
+        >
           {Hireme.subtitle}
         </h4>
         <br />
