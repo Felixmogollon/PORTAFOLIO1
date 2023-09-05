@@ -62,7 +62,7 @@ const Contact = () => {
               >
                 <i className="bx bxl-facebook flex gap-4 text-[30px]">
                   <span className="text-white  hidden md:block text-[25px]">
-                    FaceBook
+                    Facebook
                   </span>
                 </i>
               </a>
