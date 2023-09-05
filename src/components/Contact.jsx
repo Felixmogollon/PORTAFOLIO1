@@ -22,7 +22,7 @@ const Contact = () => {
         <br />
         <div className="flex gap-10 md:flex-row flex-col">
           <form
-            action="https://formsubmit.co/cristian.agudelo1@udea.edu.co"
+            action="https://formsubmit.co/1d4fd4fdd0a1bb674cef1d679c3cb713"
             method="POST"
             className="flex-1 flex flex-col gap-5"
           >
