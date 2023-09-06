@@ -66,23 +66,10 @@ const Contact = () => {
           </form>
           <div className=" flex flex-col gap-5 ">
             <div className="flex md:grid md:justify-center md:gap-8 items-center gap-8">
-              <a
-                href="https://www.facebook.com/Cristian.Agudelo09?mibextid=ZbWKwL"
-                target="_blank"
-              >
-                <i className="bx bxl-facebook flex gap-4 text-[30px]">
+              <a href="https://wa.me/+3015615963" target="_blank">
+                <i className="bx bxl-whatsapp flex gap-4 text-[30px]">
                   <span className="text-white  hidden md:block text-[25px]">
-                    Facebook
-                  </span>
-                </i>
-              </a>
-              <a
-                href="https://www.facebook.com/Cristian.Agudelo09?mibextid=ZbWKwL"
-                target="_blank"
-              >
-                <i className="bx bxl-instagram-alt flex gap-4 text-[30px]">
-                  <span className="text-white  hidden md:block text-[25px]">
-                    Instagram
+                    WhatsApp
                   </span>
                 </i>
               </a>
