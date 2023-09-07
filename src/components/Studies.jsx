@@ -32,7 +32,6 @@ const Studies = () => {
           spaceBetween={40}
           slidesPerView={1.7}
           onSlideChange={(e) => {
-            console.log(e.realIndex);
             setActiveIndex(e.realIndex);
           }}
           modules={[Pagination]}
