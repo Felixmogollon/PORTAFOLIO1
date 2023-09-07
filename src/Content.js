@@ -20,6 +20,10 @@ import person_project from "/images/Projects/person.png";
 import Hireme_person from "/images/Hireme/person.png";
 import Hireme_person2 from "/images/Hireme/person2.png";
 
+import academlo from "/images/Studies/academlo.svg";
+import udea from "/images/Studies/udea.png";
+import unab from "/images/Studies/unab.png";
+
 // import icons from react-icons
 import { BiUser } from "react-icons/bi";
 
@@ -58,7 +62,7 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "0+",
+        count: "1+",
         text: "Años de experiencia en desarrollo web.",
       },
       {
@@ -159,5 +163,30 @@ export const content = {
   Contact: {
     title: "Contáctame",
     subtitle: "PONERSE EN CONTACTO",
+  },
+  Studies: {
+    title: "Estudios",
+    subtitle: "MIS ESTUDIOS",
+    studies_content: [
+      {
+        review: "“Técnico en programación con énfasis en aplicaciones web”",
+        img: unab,
+        name: "Universidad Autónoma de Bucaramanga",
+        año: "2022-2023",
+      },
+      {
+        review: "“Ingeniería de sistemas”",
+        img: udea,
+        name: "Universidad de Antioquia",
+        año: "En proceso",
+      },
+
+      {
+        review: "“Bootcamp desarrollo front-end y back-end”",
+        img: academlo,
+        name: "ACADEMLO",
+        año: "En proceso",
+      },
+    ],
   },
 };

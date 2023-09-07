@@ -47,7 +47,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Mensaje"
-              className="border border-slate-600 p-3 rounded h-44"
+              className="border border-slate-600 p-3 rounded h-44 resize-none "
               required
             ></textarea>
             <></>
@@ -55,7 +55,7 @@ const Contact = () => {
               type="submit"
               value="Enviar"
               className="btn self-start
-            bg-white text-dark_primary cursor-pointer"
+            bg-white text-dark_primary cursor-pointer transition duration-300 transform hover:translate-y-1 hover:scale-110"
             />
             <input
               type="hidden"
@@ -67,7 +67,7 @@ const Contact = () => {
           <div className=" flex flex-col gap-5 ">
             <div className="flex md:grid md:justify-center md:gap-8 items-center gap-8">
               <a href="https://wa.me/+3015615963" target="_blank">
-                <i className="bx bxl-whatsapp flex gap-4 text-[30px]">
+                <i className="bx bxl-whatsapp flex gap-4 text-[30px] transition duration-300 transform hover:translate-y-1 hover:scale-110">
                   <span className="text-white  hidden md:block text-[25px]">
                     WhatsApp
                   </span>
@@ -77,14 +77,14 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/cristian-alberto-8a36941a4"
                 target="_blank"
               >
-                <i className="bx bxl-linkedin flex gap-4 text-[30px]">
+                <i className="bx bxl-linkedin flex gap-4 text-[30px] transition duration-300 transform hover:translate-y-1 hover:scale-110">
                   <span className="text-white  hidden md:block text-[25px]">
                     Linkedin
                   </span>
                 </i>
               </a>
               <a href="https://github.com/agudelo1" target="_blank">
-                <i className="bx bxl-github flex gap-4 text-[30px]">
+                <i className="bx bxl-github flex gap-4 text-[30px] transition duration-300 transform hover:translate-y-1 hover:scale-110">
                   <span className="text-white  hidden md:block text-[25px]">
                     Github
                   </span>

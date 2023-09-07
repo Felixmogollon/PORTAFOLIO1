@@ -14,9 +14,9 @@ export default {
     },
     extend: {
       colors: {
-        dark_primary: "#0d5b2d",
+        dark_primary: "#135225",
         bg_light_primary: "#F5F9FD",
-        gray: "#B7C5D3",
+        gray: "#767676",
       },
       backgroundImage: {
         primaryLinear:
