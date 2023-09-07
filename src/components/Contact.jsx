@@ -1,14 +1,12 @@
-import { useRef } from "react";
 import { content } from "../Content";
 import { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const { Contact } = content;
-  const form = useRef();
 
   return (
     <section
-      className="bg-dark_primary text-white flex justify-center items-center "
+      className="bg-dark_primary_1 text-white flex justify-center items-center "
       id="contact"
     >
       <Toaster />
@@ -34,7 +32,7 @@ const Contact = () => {
               name="name"
               placeholder="Nombre"
               required
-              className="border border-slate-600 p-3 rounded"
+              className="border-[2px]  border-[#4d473a] p-3 rounded"
             />
             <input
               type="email"
@@ -42,21 +40,22 @@ const Contact = () => {
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Correo"
               required
-              className="border border-slate-600 p-3 rounded"
+              className="border-[2px]  border-[#4d473a] p-3 rounded"
             />
             <textarea
               name="message"
               placeholder="Mensaje"
-              className="border border-slate-600 p-3 rounded h-44 resize-none "
+              className="border-[2px]  border-[#4d473a] p-3 rounded h-44 resize-none "
               required
             ></textarea>
             <></>
-            <input
+            <button
               type="submit"
-              value="Enviar"
               className="btn self-start
             bg-white text-dark_primary cursor-pointer transition duration-300 transform hover:translate-y-1 hover:scale-110"
-            />
+            >
+              Enviar
+            </button>
             <input
               type="hidden"
               name="_next"
