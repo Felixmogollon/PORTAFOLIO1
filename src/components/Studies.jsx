@@ -36,7 +36,7 @@ const Studies = () => {
             setActiveIndex(e.realIndex);
           }}
           modules={[Pagination]}
-          className="md:h-96 h-[45rem] max-w-3xl"
+          className="md:h-96 h-[45rem]  min-w-[200px] max-w-3xl p-4"
         >
           {Studies.studies_content.map((content, i) => (
             <SwiperSlide key={i}>
