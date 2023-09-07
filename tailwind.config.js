@@ -14,13 +14,13 @@ export default {
     },
     extend: {
       colors: {
-        dark_primary: "#06223F",
+        dark_primary: "#0d5b2d",
         bg_light_primary: "#F5F9FD",
         gray: "#B7C5D3",
       },
       backgroundImage: {
         primaryLinear:
-          "linear-gradient(180deg, rgba(186, 206, 252, 0.8) 0%, rgba(213, 227, 241, 0.8) 100%)",
+          "linear-gradient(79deg, rgba(113,184,127,1) 8%, rgba(137,222,162,1) 96%, rgba(137,222,162,1) 100%)",
       },
       dropShadow: {
         primary: "-5px 35px 40px rgba(223, 229, 236, 0.9)",
