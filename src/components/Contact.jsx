@@ -46,7 +46,7 @@ const Contact = () => {
             />
             <textarea
               name="message"
-              placeholder="Mensage"
+              placeholder="Mensaje"
               className="border border-slate-600 p-3 rounded h-44"
               required
             ></textarea>
