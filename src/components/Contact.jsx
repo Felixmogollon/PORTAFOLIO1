@@ -53,7 +53,7 @@ const Contact = () => {
             <></>
             <input
               type="submit"
-              value="Send Message"
+              value="Enviar"
               className="btn self-start
             bg-white text-dark_primary cursor-pointer"
             />
