@@ -20,7 +20,7 @@ function App() {
     Aos.init({
       duration: 1800,
       offset: 100,
-      enable: "mobile",
+      disable: "mobile",
     });
   }, []);
   return (
