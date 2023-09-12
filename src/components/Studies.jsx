@@ -10,14 +10,13 @@ import "swiper/css/effect-flip";
 import "swiper/css/navigation";
 
 import { EffectFlip, Navigation, Pagination } from "swiper";
-import { useState } from "react";
 
 const Studies = () => {
   const { Studies } = content;
 
   return (
     <section>
-      <div className="md:container px-2 pt-14">
+      <div className="md:container p-2 pb-4">
         <h2 className="title" data-aos="fade-down">
           {Studies.title}
         </h2>
@@ -26,6 +25,7 @@ const Studies = () => {
         </h4>
         <br />
         <Swiper
+          data-aos="fade-left"
           effect={"flip"}
           grabCursor={true}
           pagination={true}
@@ -38,11 +38,13 @@ const Studies = () => {
               <div
                 className={`mySwiper duration-500 bg-bg_light_primary mx-8 border-2 
               p-4 h-full rounded-2xl flex  gap-6
-               border-slate-200 md:flex-row flex-col justify-center items-center 
+               border-slate-200 sm:flex-row flex-col justify-center items-center 
                 `}
               >
-                <img src={content.img} alt="..." className="h-24 mx-auto" />
-                <div>
+                <div className="flex justify-center items-center">
+                  <img src={content.img} alt="..." className="h-24 mx-auto" />
+                </div>
+                <div className="w-[200px] sm:w-[300px]">
                   <p className="sm:text-base text-sm text-center">
                     {content.review}
                   </p>

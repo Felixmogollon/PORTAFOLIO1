@@ -25,14 +25,14 @@ const Contact = () => {
           <form
             action="https://formsubmit.co/1d4fd4fdd0a1bb674cef1d679c3cb713"
             method="POST"
-            className="flex-1 flex flex-col gap-5  max-w-[800px]"
+            className="flex-1 flex flex-col gap-5  max-w-[800px] "
           >
             <input
               type="text"
               name="name"
               placeholder="Nombre"
               required
-              className="border-[2px]  border-[#4d473a] p-3 rounded"
+              className="placeholder-white/50 border-[2px]  border-[#4d473a] p-3 rounded"
             />
             <input
               type="email"
@@ -40,12 +40,12 @@ const Contact = () => {
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Correo"
               required
-              className="border-[2px]  border-[#4d473a] p-3 rounded"
+              className="placeholder-white/50 border-[2px]  border-[#4d473a] p-3 rounded"
             />
             <textarea
               name="message"
               placeholder="Mensaje"
-              className="border-[2px]  border-[#4d473a] p-3 rounded h-44 resize-none "
+              className="placeholder-white/50 border-[2px]  border-[#3a4d3e] p-3 rounded h-44 resize-none "
               required
             ></textarea>
             <></>
