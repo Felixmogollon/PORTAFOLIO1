@@ -5,16 +5,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-flip";
 
-import { Pagination } from "swiper";
+import "swiper/css/navigation";
+
+import { EffectFlip, Navigation, Pagination } from "swiper";
 import { useState } from "react";
 
 const Studies = () => {
   const { Studies } = content;
-  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <section>
-      <div className="md:container px-5 pt-14">
+      <div className="md:container px-2 pt-14">
         <h2 className="title" data-aos="fade-down">
           {Studies.title}
         </h2>
@@ -23,29 +26,20 @@ const Studies = () => {
         </h4>
         <br />
         <Swiper
-          direction={"vertical"}
-          pagination={{
-            clickable: true,
-          }}
-          data-aos="fade-up"
-          loop={true}
-          spaceBetween={40}
-          slidesPerView={1.7}
-          onSlideChange={(e) => {
-            setActiveIndex(e.realIndex);
-          }}
-          modules={[Pagination]}
-          className="md:h-96 h-[45rem]  min-w-[200px] max-w-3xl p-4"
+          effect={"flip"}
+          grabCursor={true}
+          pagination={true}
+          navigation={true}
+          modules={[EffectFlip, Pagination, Navigation]}
+          className="md:h-96 h-[30rem]  min-w-[200px] max-w-3xl p-2"
         >
           {Studies.studies_content.map((content, i) => (
             <SwiperSlide key={i}>
               <div
-                className={` duration-500 bg-bg_light_primary mx-8 border-2 
-              p-8 h-full rounded-2xl flex items-center gap-6
-               border-slate-200 md:flex-row flex-col
-                ${
-                  activeIndex !== i && "scale-75 blur-sm"
-                } grid justify-center items-center md:flex  `}
+                className={`mySwiper duration-500 bg-bg_light_primary mx-8 border-2 
+              p-4 h-full rounded-2xl flex  gap-6
+               border-slate-200 md:flex-row flex-col justify-center items-center 
+                `}
               >
                 <img src={content.img} alt="..." className="h-24 mx-auto" />
                 <div>
