@@ -105,7 +105,7 @@ export const content = {
     service_content: [
       {
         title: "Desarrollo web",
-        para: "Desarrollador web con la experiencia y las habilidades necesarias para llevar tus ideas y proyectos en línea al siguiente nivel. Mi enfoque se centra en ofrecer soluciones web a medida que combinen diseño atractivo, funcionalidad intuitiva y un rendimiento excepciona",
+        para: "Desarrollador web con la experiencia y las habilidades necesarias para llevar tus ideas y proyectos en línea al siguiente nivel. Mi enfoque se centra en ofrecer soluciones web a medida que combinen diseño atractivo, funcionalidad intuitiva y un rendimiento excepcional",
         logo: services_logo1,
       },
     ],
