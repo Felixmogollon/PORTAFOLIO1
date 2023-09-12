@@ -11,8 +11,8 @@ import { Pagination } from "swiper";
 const Projects = () => {
   const { Projects } = content;
   return (
-    <section className="bg-bg_light_primary" id="projects">
-      <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
+    <section className="bg-bg_light_primary flex justify-center" id="projects">
+      <div className="md:container px-5 pt-14 min-h-screen grid justify-center items-center">
         <div>
           <h2 className="title" data-aos="fade-down">
             {Projects.title}
@@ -25,13 +25,7 @@ const Projects = () => {
           </h4>
           <br />
         </div>
-        <div className="flex items-center  lg:flex-row flex-col-reverse gap-5">
-          <img
-            src={Projects.image}
-            alt="..."
-            data-aos="fade-right"
-            className="max-w-[45vw] min-w-[22rem]"
-          />
+        <div>
           <Swiper
             pagination={{
               clickable: true,
@@ -39,7 +33,7 @@ const Projects = () => {
             data-aos="fade-left"
             spaceBetween={20}
             modules={[Pagination]}
-            className="rounded-3xl pb-16 md:max-w-[420px] max-w-[280px] drop-shadow-primary self-center"
+            className="rounded-3xl pb-16 sm:max-w-[500px] max-w-[280px] drop-shadow-primary self-center"
           >
             {Projects.project_content.map((content, i) => (
               <SwiperSlide

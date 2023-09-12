@@ -26,10 +26,6 @@ export default {
       dropShadow: {
         primary: "-5px 35px 40px rgba(223, 229, 236, 0.9)",
       },
-      screens: {
-        xxs: "350px",
-        xs: "450px",
-      },
     },
   },
   plugins: [],

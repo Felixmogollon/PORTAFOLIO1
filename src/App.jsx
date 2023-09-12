@@ -1,11 +1,10 @@
 import "./App.css";
 import Hero from "./components/Hero";
-import Navbar from "./layouts/Navbar";
-import Skills from "./components/Skills";
-import Service from "./components/Services";
 import Projects from "./components/Projects";
+import Service from "./components/Services";
+import Skills from "./components/Skills";
+import Navbar from "./layouts/Navbar";
 
-import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 
 // Animation package
@@ -31,7 +30,6 @@ function App() {
       <Service />
       <Projects />
       <Studies />
-      <Hireme />
       <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">CRISTIAN AGUDELO</h6>

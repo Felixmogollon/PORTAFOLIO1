@@ -1,5 +1,4 @@
 // import images
-import Hero_person from "/images/Hero/person.png";
 
 import git from "/images/Skills/github.png";
 import js from "/images/Skills/js.png";
@@ -15,10 +14,6 @@ import project4 from "/images/Projects/img4.png";
 import project5 from "/images/Projects/img5.png";
 import project6 from "/images/Projects/img6.png";
 import project7 from "/images/Projects/img7.png";
-import person_project from "/images/Projects/person.png";
-
-import Hireme_person from "/images/Hireme/person.png";
-import Hireme_person2 from "/images/Hireme/person2.png";
 
 import academlo from "/images/Studies/academlo.svg";
 import udea from "/images/Studies/udea.png";
@@ -59,7 +54,7 @@ export const content = {
     firstName: "CRISTIAN",
     LastName: "AGUDELO",
     btnText: "Contactame",
-    image: Hero_person,
+    para: "¡Hola! Soy Cristian, un apasionado desarrollador frontend con experiencia en la creación de experiencias web excepcionales. Mi enfoque se centra en utilizar tecnologías de vanguardia para diseñar y desarrollar aplicaciones web que no solo sean visualmente atractivas, sino también altamente funcionales y eficientes.",
     hero_content: [
       {
         count: "1+",
@@ -113,7 +108,6 @@ export const content = {
   Projects: {
     title: "Proyectos",
     subtitle: "MI CREACIÓN",
-    image: person_project,
     project_content: [
       {
         title: "Ecommerce",
@@ -152,14 +146,7 @@ export const content = {
       },
     ],
   },
-  Hireme: {
-    title: "Contratame",
-    subtitle: "PARA TUS PROYECTOS",
-    image1: Hireme_person,
-    image2: Hireme_person2,
-    para: "¡Hola! Soy Cristian, un apasionado desarrollador frontend con experiencia en la creación de experiencias web excepcionales. Mi enfoque se centra en utilizar tecnologías de vanguardia para diseñar y desarrollar aplicaciones web que no solo sean visualmente atractivas, sino también altamente funcionales y eficientes.",
-    btnText: "Hire Me",
-  },
+
   Contact: {
     title: "Contáctame",
     subtitle: "PONERSE EN CONTACTO",
