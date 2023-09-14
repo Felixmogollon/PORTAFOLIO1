@@ -6,16 +6,16 @@ const Contact = () => {
 
   return (
     <section
-      className="bg-dark_primary_1 text-white flex justify-center items-center "
+      className="bg-dark_primary_1 text-white flex justify-center items-center dark:bg-darkTheme "
       id="contact"
     >
       <Toaster />
-      <div className="md:container px-5 py-14 ">
+      <div className="md:container px-5 py-20 ">
         <h2 className="title !text-white" data-aos="fade-down">
           {Contact.title}
         </h2>
         <h4
-          className="subtitle text-[20px] md:text-[35px]"
+          className="subtitle text-[20px] md:text-[35px] dark:text-black"
           data-aos="fade-down"
         >
           {Contact.subtitle}
@@ -32,7 +32,7 @@ const Contact = () => {
               name="name"
               placeholder="Nombre"
               required
-              className="placeholder-white/50 border-[2px]  border-[#4d473a] p-3 rounded"
+              className="placeholder-white/50 border-[3px]  border-[#4d473a] dark:border-black p-3 rounded"
             />
             <input
               type="email"
@@ -40,19 +40,19 @@ const Contact = () => {
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Correo"
               required
-              className="placeholder-white/50 border-[2px]  border-[#4d473a] p-3 rounded"
+              className="placeholder-white/50 border-[3px]  border-[#4d473a] dark:border-black p-3 rounded"
             />
             <textarea
               name="message"
               placeholder="Mensaje"
-              className="placeholder-white/50 border-[2px]  border-[#3a4d3e] p-3 rounded h-44 resize-none "
+              className="placeholder-white/50 border-[3px]  border-[#3a4d3e] dark:border-black p-3 rounded h-44 resize-none "
               required
             ></textarea>
             <></>
             <button
               type="submit"
               className="btn self-start
-            bg-white text-dark_primary cursor-pointer transition duration-300 transform hover:translate-y-1 hover:scale-110"
+            bg-white text-dark_primary   cursor-pointer dark:text-black dark:hover:bg-white/60 dark:border-[3px] dark:hover:border-black animate-move infinite "
             >
               Enviar
             </button>

@@ -25,6 +25,7 @@ import { BiUser } from "react-icons/bi";
 import { MdArrowForward, MdOutlinePermContactCalendar } from "react-icons/md";
 import { RiProjectorLine, RiServiceLine } from "react-icons/ri";
 import { TbSmartHome } from "react-icons/tb";
+import { PiStudentBold } from "react-icons/pi";
 
 export const content = {
   nav: [
@@ -43,6 +44,11 @@ export const content = {
     {
       link: "#projects",
       icon: RiProjectorLine,
+    },
+
+    {
+      link: "#studies",
+      icon: PiStudentBold,
     },
     {
       link: "#contact",

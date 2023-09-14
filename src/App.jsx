@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Studies from "./components/Studies";
 
@@ -23,7 +23,7 @@ function App() {
     });
   }, []);
   return (
-    <div>
+    <div className="">
       <Navbar />
       <Hero />
       <Skills />
@@ -31,9 +31,11 @@ function App() {
       <Projects />
       <Studies />
       <Contact />
-      <footer className="p-3 text-center">
-        <h6 className="mb-3">CRISTIAN AGUDELO</h6>
-        <p>CopyRights © 2023 | All Rights Reserved </p>
+      <footer className="p-3 text-center dark:bg-slate-800 ">
+        <h6 className="mb-3 dark:text-white">CRISTIAN AGUDELO</h6>
+        <p className="dark:text-white">
+          CopyRights © 2023 | All Rights Reserved{" "}
+        </p>
       </footer>
     </div>
   );

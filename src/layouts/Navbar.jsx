@@ -1,22 +1,44 @@
-import { createElement, useState } from "react";
+import { createElement, useEffect, useState } from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { content } from "../Content";
 
 const Navbar = () => {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
   const { nav } = content;
   const [showMenu, setShowMenu] = useState(true);
   const [active, setActive] = useState(0);
 
+  const handleChangeTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
+
+  useEffect(() => {
+    isDarkTheme
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
+  }, [isDarkTheme]);
+
   return (
     <div className="w-full flex justify-center">
+      <nav className="h-[60px] p-4 px-8 w-full bg-slate-100 dark:bg-slate-800 dark:text-white shadow-md flex justify-between items-center fixed z-[999] ">
+        <button
+          className="cursor-pointer  rounded-lg p-2 "
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <HiMenuAlt2 size={34} />
+        </button>
+        <button onClick={handleChangeTheme}>
+          {isDarkTheme ? (
+            <i className="bx bx-sun text-[25px]"></i>
+          ) : (
+            <i className="bx bx-moon text-[25px] "></i>
+          )}
+        </button>
+      </nav>
+
       <div
-        className="sm:cursor-pointer fixed top-10 left-10 z-[999] rounded-lg bg-white/40 p-2"
-        onClick={() => setShowMenu(!showMenu)}
-      >
-        <HiMenuAlt2 size={34} />
-      </div>
-      <nav
-        className={`fixed  z-[999] flex items-center gap-5 bg-slate-200/60 px-6 py-3 backdrop-blur-md rounded-full text-dark_primary duration-300 ${
+        className={`fixed  z-[999] flex items-center justify-center gap-3 sm:gap-5 bg-slate-200/60 px-6 py-3 backdrop-blur-md rounded-full text-dark_primary dark:text-darkTheme duration-300  ${
           showMenu ? "bottom-10" : "bottom-[-100%]"
         }`}
       >
@@ -25,13 +47,13 @@ const Navbar = () => {
             key={item.link}
             href={item.link}
             onClick={() => setActive(i)}
-            className={`text-xl p-2.5 rounded-full sm:cursor-pointer 
-       ${i === active && "bg-dark_primary text-white"} `}
+            className={`text-[20px] sm:text-xl p-1  sm:p-4 rounded-full sm:cursor-pointer  
+       ${i === active && "bg-dark_primary dark:bg-darkTheme text-white"} `}
           >
             {createElement(item.icon)}
           </a>
         ))}
-      </nav>
+      </div>
     </div>
   );
 };

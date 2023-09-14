@@ -52,8 +52,8 @@
 
 @layer utilities {
   .btn {
-    @apply py-2 px-4 border-2 rounded-md
-       border-dark_primary rounded-br-3xl font-medium;
+    @apply py-2 px-4 border-[3px] rounded-md
+       border-dark_primary rounded-br-3xl font-medium dark:border-darkTheme;
   }
   .title {
     @apply md:text-3xl text-2xl;
@@ -63,9 +63,25 @@
   }
 }
 .swiper-pagination-bullet {
-  @apply w-3 h-3 bg-dark_primary;
+  @apply w-4 h-4 bg-dark_primary dark:bg-darkTheme;
 }
 .text {
   text-orientation: sideways-right;
   writing-mode: vertical-rl;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      20px
+    ); /* Cambia la distancia que deseas que se mueva */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.btn.animate-move {
+  animation: move 2s linear infinite; /* Ajusta la duración de la animación según tus necesidades */
 }

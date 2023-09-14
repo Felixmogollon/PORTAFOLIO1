@@ -9,14 +9,17 @@ const Skills = () => {
   const { skills } = content;
 
   return (
-    <section className="min-h-fit bg-bg_light_primary" id="skills">
+    <section
+      className="min-h-fit bg-bg_light_primary dark:bg-slate-800"
+      id="skills"
+    >
       {/* content */}
-      <div className="md:container px-5  py-14">
-        <h2 className="title" data-aos="fade-down">
+      <div className="md:container px-8 py-20 ">
+        <h2 className="title dark:text-white" data-aos="fade-down">
           {skills.title}
         </h2>
         <h4
-          className="subtitle text-[17px]  md:text-[35px]"
+          className="subtitle text-[17px]  md:text-[35px] dark:text-darkTheme"
           data-aos="fade-down"
         >
           {skills.subtitle}
@@ -30,7 +33,7 @@ const Skills = () => {
               data-aos-delay={i * 400}
               className="bg-white 
                relative group w-full flex items-center justify-center
-                gap-8 p-5 max-w-[280px] rounded-md border-2 border-slate-200"
+                gap-8 p-5 max-w-[280px] rounded-md border-[3px] border-slate-200 dark:border-darkTheme dark:bg-slate-900"
             >
               <div>
                 <img
@@ -40,7 +43,7 @@ const Skills = () => {
                 />
               </div>
               <div>
-                <h6>{skill.name}</h6>
+                <h6 className="dark:text-white">{skill.name}</h6>
               </div>
             </div>
           ))}
