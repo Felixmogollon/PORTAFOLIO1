@@ -21,7 +21,7 @@ const Hero = () => {
             {hero.title}
           </h2>
           <br />
-          <div className=" flex justify-between px-8 ">
+          <div className=" grid justify-center sm:justify-between items-center px-8 gap-8 sm:flex ">
             <a className="btn  dark:hover:bg-darkTheme hover:bg-dark_primary_1 hover:text-white  dark:text-white animate-move infinite">
               Descargar CV
             </a>
@@ -36,7 +36,7 @@ const Hero = () => {
             <p
               data-aos="fade-left"
               className="border-[3px] border-dark_primary max-w-sm
-           p-4 shadow-sm rounded-xl rounded-br-[6rem] sm:min-w-[22rem] leading-7 dark:border-darkTheme dark:text-white"
+           p-4 shadow-sm rounded-xl  sm:min-w-[22rem] leading-7 dark:border-darkTheme dark:text-white"
             >
               {hero.para}
             </p>
