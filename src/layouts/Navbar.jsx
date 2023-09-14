@@ -3,14 +3,18 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { content } from "../Content";
 
 const Navbar = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(
+    localStorage.getItem("theme") === "dark"
+  );
 
   const { nav } = content;
   const [showMenu, setShowMenu] = useState(true);
   const [active, setActive] = useState(0);
 
   const handleChangeTheme = () => {
+    const newTheme = !isDarkTheme ? "dark" : "light";
     setIsDarkTheme(!isDarkTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   useEffect(() => {
@@ -30,9 +34,9 @@ const Navbar = () => {
         </button>
         <button onClick={handleChangeTheme}>
           {isDarkTheme ? (
-            <i className="bx bx-sun text-[25px]"></i>
+            <i className="bx bx-sun text-[35px] "></i>
           ) : (
-            <i className="bx bx-moon text-[25px] "></i>
+            <i className="bx bx-moon text-[35px]  "></i>
           )}
         </button>
       </nav>

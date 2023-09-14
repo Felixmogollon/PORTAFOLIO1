@@ -10,7 +10,7 @@ const Contact = () => {
       id="contact"
     >
       <Toaster />
-      <div className="md:container px-5 py-20 ">
+      <div className="container px-5 py-20 ">
         <h2 className="title !text-white" data-aos="fade-down">
           {Contact.title}
         </h2>
@@ -21,11 +21,11 @@ const Contact = () => {
           {Contact.subtitle}
         </h4>
         <br />
-        <div className="flex gap-10 md:flex-row flex-col">
+        <div className="flex gap-10 md:flex-row flex-col  max-w-[800px] mx-auto">
           <form
             action="https://formsubmit.co/1d4fd4fdd0a1bb674cef1d679c3cb713"
             method="POST"
-            className="flex-1 flex flex-col gap-5  max-w-[800px] "
+            className="flex-1 flex flex-col gap-5 "
           >
             <input
               type="text"
