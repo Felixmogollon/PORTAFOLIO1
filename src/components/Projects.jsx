@@ -12,10 +12,10 @@ const Projects = () => {
   const { Projects } = content;
   return (
     <section
-      className="bg-bg_light_primary flex justify-center dark:bg-slate-800"
+      className="bg-bg_light_primary flex justify-center dark:bg-slate-800 "
       id="projects"
     >
-      <div className="md:container  min-h-[500px] grid  py-4 items-center">
+      <div className="md:container  min-h-[500px] grid items-center py-20">
         <div>
           <h2 className="title dark:text-white" data-aos="fade-down">
             {Projects.title}
