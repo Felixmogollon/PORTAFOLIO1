@@ -1,9 +1,44 @@
 import { content } from "../Content";
 import { Toaster } from "react-hot-toast";
 
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 const Contact = () => {
   const { Contact } = content;
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4ms07ui",
+        "template_4w77edv",
+        e.target,
+        "5Ma01IBYP8JJqOPXU"
+      )
+      .then(
+        () => {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Envio exitoso",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          e.target.reset();
+        },
+        () => {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "No se pudo enviar, ¡vuelve a intentar! ",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      );
+  };
   return (
     <section
       className="bg-dark_primary_1 text-white flex justify-center items-center dark:bg-darkTheme "
@@ -22,21 +57,17 @@ const Contact = () => {
         </h4>
         <br />
         <div className="flex gap-10 md:flex-row flex-col  max-w-[800px] mx-auto">
-          <form
-            action="https://formsubmit.co/1d4fd4fdd0a1bb674cef1d679c3cb713"
-            method="POST"
-            className="flex-1 flex flex-col gap-5 "
-          >
+          <form onSubmit={sendEmail} className="flex-1 flex flex-col gap-5 ">
             <input
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Nombre"
               required
               className="placeholder-white/50 border-[3px]  border-[#4d473a] dark:border-black p-3 rounded"
             />
             <input
               type="email"
-              name="email"
+              name="user_email"
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Correo"
               required
@@ -56,12 +87,6 @@ const Contact = () => {
             >
               Enviar
             </button>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://portafolio-cristian-agudelo.netlify.app"
-            />
-            <input type="hidden" name="_captcha" value="false" />
           </form>
           <div className=" flex flex-col gap-5 ">
             <div className="flex md:grid md:justify-center md:gap-8 items-center gap-8">
