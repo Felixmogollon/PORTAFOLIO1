@@ -15,7 +15,7 @@ const Projects = () => {
       className="bg-bg_light_primary flex justify-center dark:bg-slate-800"
       id="projects"
     >
-      <div className="md:container px-5 pt-14 min-h-screen grid  items-center">
+      <div className="md:container  min-h-[500px] grid  py-4 items-center">
         <div>
           <h2 className="title dark:text-white" data-aos="fade-down">
             {Projects.title}
@@ -28,7 +28,7 @@ const Projects = () => {
           </h4>
           <br />
         </div>
-        <div>
+        <div className="">
           <Swiper
             pagination={{
               clickable: true,
