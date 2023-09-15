@@ -51,7 +51,7 @@ const Navbar = () => {
             key={item.link}
             href={item.link}
             onClick={() => setActive(i)}
-            className={`text-[20px] sm:text-xl p-1  sm:p-4 rounded-full sm:cursor-pointer  
+            className={`text-[20px] sm:text-[30px] p-1  sm:p-2 rounded-full sm:cursor-pointer  
        ${i === active && "bg-dark_primary dark:bg-darkTheme text-white"} `}
           >
             {createElement(item.icon)}
