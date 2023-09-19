@@ -17,7 +17,7 @@ export default {
       colors: {
         dark_primary: "#135225",
         dark_primary_1: "#5ba38b",
-        bg_light_primary: "#F5F9FD",
+        bg_light_primary: "#deeeda",
         gray: "#4d473a",
         darkTheme: "#0d8f96",
       },
