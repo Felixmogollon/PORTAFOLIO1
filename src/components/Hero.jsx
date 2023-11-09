@@ -22,13 +22,13 @@ const Hero = () => {
           </h2>
           <br />
           <div className=" grid justify-center sm:justify-between items-center px-8 gap-8 sm:flex ">
-            <a
-              href="/CV_Cristian_Agudelo.pdf"
+            {/* <a
+              href=""
               target="_blank"
               className="btn  dark:hover:bg-darkTheme hover:bg-dark_primary_1 hover:text-white  dark:text-white animate-move infinite"
             >
               Descargar CV
-            </a>
+            </a> */}
             <a
               href="#contact"
               className="btn dark:hover:bg-darkTheme hover:bg-dark_primary_1 hover:text-white  dark:text-white "

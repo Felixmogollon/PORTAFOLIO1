@@ -15,9 +15,14 @@ import project5 from "/images/Projects/img5.png";
 import project6 from "/images/Projects/img6.png";
 import project7 from "/images/Projects/img7.png";
 
+
 import academlo from "/images/Studies/academlo.svg";
 import udea from "/images/Studies/udea.png";
 import unab from "/images/Studies/unab.png";
+
+const fesc = "./images/Studies/FESC.png"
+const table = "./images/Skills/admin.png"
+const project8 = "./images/Projects/ecommerce1.jpg";
 
 // import icons from react-icons
 import { BiUser } from "react-icons/bi";
@@ -57,17 +62,17 @@ export const content = {
   ],
   hero: {
     title: "Desarrollador web",
-    firstName: "CRISTIAN",
-    LastName: "AGUDELO",
+    firstName: "FELIX",
+    LastName: "MOGOLLON",
     btnText: "Contactame",
-    para: "¡Hola! Soy Cristian, un apasionado desarrollador frontend con experiencia en la creación de experiencias web excepcionales. Mi enfoque se centra en utilizar tecnologías de vanguardia para diseñar y desarrollar aplicaciones web que no solo sean visualmente atractivas, sino también altamente funcionales y eficientes.",
+    para: " HOLA!,Soy felix un desarrollador frontend apasionado con experiencia en la creación de paginas web excepcionales, combinando habilidades en contabilidad para ofrecer soluciones creativas.  ",
     hero_content: [
       {
-        count: "1+",
+        count: "-1",
         text: "Años de experiencia en desarrollo web.",
       },
       {
-        count: "7+",
+        count: "4",
         text: "Proyectos trabajados en mi proceso de educación",
       },
     ],
@@ -88,9 +93,9 @@ export const content = {
         logo: js,
       },
       {
-        name: "Node js",
+        name: "Administracion",
 
-        logo: nodejs,
+        logo: table,
       },
       {
         name: "GitHub",
@@ -117,38 +122,25 @@ export const content = {
     project_content: [
       {
         title: "Ecommerce",
-        image: project1,
-        link: "https://store-ecommerce-cristian.netlify.app",
+        image: project8,
+        link: "https://aquamarine-gnome-3e3d52.netlify.app/#",
       },
       {
         title: "App del clima",
         image: project2,
-        link: "https://app-weather-cristian.netlify.app",
+        link: "https://shimmering-praline-ea0341.netlify.app/",
       },
-      {
-        title: "Buscador de paises",
-        image: project3,
-        link: "https://app-countries-cristian.netlify.app",
-      },
+   
       {
         title: "App de Rick and Morty",
         image: project4,
-        link: "https://rick-and-morty-app-cristian.netlify.app",
+        link: "https://flourishing-cascaron-c04901.netlify.app/",
       },
-      {
-        title: "Crud de usuarios",
-        image: project5,
-        link: "https://users-cristian.netlify.app",
-      },
-      {
-        title: "App galletas de la fortuna",
-        image: project6,
-        link: "https://fortune-cookies-cristian.netlify.app",
-      },
+    
       {
         title: "App de Pokemons",
         image: project7,
-        link: "https://api-pokemons-cristian.netlify.app",
+        link: "https://admirable-marigold-5eafd4.netlify.app/",
       },
     ],
   },
@@ -162,17 +154,12 @@ export const content = {
     subtitle: "MIS ESTUDIOS",
     studies_content: [
       {
-        review: "“Técnico en programación con énfasis en aplicaciones web”",
-        img: unab,
-        name: "Universidad Autónoma de Bucaramanga",
-        año: "2022-2023",
+        review: "“Técnico en contabilidad financiera”",
+        img: fesc,
+        name: "Fundación de Estudios Superiores Comfanorte(FESC)",
+        año: "2020-2021",
       },
-      {
-        review: "“Ingeniería de sistemas”",
-        img: udea,
-        name: "Universidad de Antioquia",
-        año: "En proceso",
-      },
+     
 
       {
         review: "“Bootcamp desarrollo front-end y back-end”",

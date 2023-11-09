@@ -32,10 +32,8 @@ function App() {
       <Studies />
       <Contact />
       <footer className="p-3 text-center dark:bg-slate-800 ">
-        <h6 className="mb-3 dark:text-white">CRISTIAN AGUDELO</h6>
-        <p className="dark:text-white">
-          CopyRights © 2023 | All Rights Reserved{" "}
-        </p>
+        <h6 className="mb-3 dark:text-white">FELIX MOGOLLON</h6>
+        
       </footer>
     </div>
   );

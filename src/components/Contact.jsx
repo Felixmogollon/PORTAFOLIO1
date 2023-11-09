@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_4ms07ui",
+        "service_70hjao9",
         "template_4w77edv",
         e.target,
-        "5Ma01IBYP8JJqOPXU"
+        "N1IXmEMjF61bUEZ3eFxRG"
       )
       .then(
         () => {
@@ -41,7 +41,7 @@ const Contact = () => {
   };
   return (
     <section
-      className="bg-dark_primary_1 text-white flex justify-center items-center dark:bg-darkTheme "
+      className="bg-yellow-300 text-white flex justify-center items-center dark:bg-darkTheme "
       id="contact"
     >
       <Toaster />
@@ -68,7 +68,7 @@ const Contact = () => {
             <input
               type="email"
               name="user_email"
-              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
               placeholder="Correo"
               required
               className="placeholder-white/50 border-[3px]  border-[#4d473a] dark:border-black p-3 rounded"
@@ -90,7 +90,7 @@ const Contact = () => {
           </form>
           <div className=" flex flex-col gap-5 ">
             <div className="flex md:grid md:justify-center md:gap-8 items-center gap-8">
-              <a href="https://wa.me/+3015615963" target="_blank">
+              <a href="https://wa.me/+3183165356" target="_blank">
                 <i className="bx bxl-whatsapp flex gap-4 text-[30px] transition duration-300 transform hover:translate-y-1 hover:scale-110">
                   <span className="text-white  hidden md:block text-[25px]">
                     WhatsApp
@@ -98,7 +98,7 @@ const Contact = () => {
                 </i>
               </a>
               <a
-                href="https://www.linkedin.com/in/cristian-alberto-8a36941a4"
+                href="https://www.linkedin.com/in/felix-mogollon-55a317230"
                 target="_blank"
               >
                 <i className="bx bxl-linkedin flex gap-4 text-[30px] transition duration-300 transform hover:translate-y-1 hover:scale-110">
@@ -107,7 +107,7 @@ const Contact = () => {
                   </span>
                 </i>
               </a>
-              <a href="https://github.com/agudelo1" target="_blank">
+              <a href="https://github.com/Felixmogollon" target="_blank">
                 <i className="bx bxl-github flex gap-4 text-[30px] transition duration-300 transform hover:translate-y-1 hover:scale-110">
                   <span className="text-white  hidden md:block text-[25px]">
                     Github
