@@ -41,7 +41,7 @@ const Contact = () => {
   };
   return (
     <section
-      className="bg-yellow-300 text-white flex justify-center items-center dark:bg-darkTheme "
+      className="bg-bg_light_primary text-white flex justify-center items-center dark:bg-darkTheme "
       id="contact"
     >
       <Toaster />

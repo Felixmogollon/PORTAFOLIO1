@@ -66,6 +66,7 @@ export const content = {
     LastName: "MOGOLLON",
     btnText: "Contactame",
     para: " HOLA!,Soy felix un desarrollador frontend apasionado con experiencia en la creación de paginas web excepcionales, combinando habilidades en contabilidad para ofrecer soluciones creativas.  ",
+    
     hero_content: [
       {
         count: "-1",
