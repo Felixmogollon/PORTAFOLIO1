@@ -6,6 +6,7 @@ import nodejs from "/images/Skills/node.png";
 import reactjs from "/images/Skills/react.png";
 
 import services_logo1 from "/images/Services/logo1.png";
+import logodenode from "/images/Skills/logodenode.png";
 
 import project1 from "/images/Projects/img1.png";
 import project2 from "/images/Projects/img2.png";
@@ -94,9 +95,9 @@ export const content = {
         logo: js,
       },
       {
-        name: "Administracion",
+        name: "NODE. JS",
 
-        logo: table,
+        logo: logodenode,
       },
       {
         name: "GitHub",
@@ -166,7 +167,7 @@ export const content = {
         review: "“Bootcamp desarrollo front-end y back-end”",
         img: academlo,
         name: "ACADEMLO",
-        año: "En proceso",
+        año: "2024",
       },
     ],
   },
